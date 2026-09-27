@@ -24,6 +24,12 @@ A small TypeScript project for learning **Netlify Functions**. It includes simpl
 - Node.js (current LTS recommended)
 - A Netlify account and the Netlify CLI
 
+Install the CLI globally:
+
+```bash
+npm install -g netlify-cli
+```
+
 ### Install and run locally
 
 ```bash
@@ -73,6 +79,12 @@ The function validates GitHub's `x-hub-signature-256` header before sending a fo
 ## Deployment
 
 Connect this repository to Netlify, add the environment variables in the site's configuration, and deploy. Netlify automatically discovers functions in `netlify/functions`.
+
+To deploy the production version from the CLI:
+
+```bash
+netlify deploy --prod
+```
 
 ## Notes
 
